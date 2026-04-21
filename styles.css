@@ -1,0 +1,110 @@
+:root{
+  --primary:#0b6b5a;
+  --accent:#10b981;
+  --muted:#6b7280;
+  --bg:#f6fbfa;
+  --maxw:1100px;
+  --radius:10px;
+  --container-padding:1rem;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#0f172a;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:1.25rem;
+}
+
+/* Header */
+.site-header{
+  background:#fff;
+  border-bottom:1px solid #e6eef0;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand h1{margin:.25rem 0;color:var(--primary)}
+.tagline{margin:0;color:var(--muted);font-size:.95rem}
+.nav a{
+  margin-left:1rem;
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:600;
+}
+.nav a:hover{color:var(--accent)}
+
+/* Hero */
+.hero{
+  background:linear-gradient(90deg, rgba(11,107,90,0.08), rgba(16,185,129,0.04));
+  padding:3.5rem 0;
+  margin-bottom:1rem;
+}
+.hero-inner{ text-align:center; }
+.hero h2{font-size:1.9rem;margin:.2rem 0;color:var(--primary)}
+.hero p{color:var(--muted);max-width:700px;margin:0.5rem auto 1rem}
+.cta{
+  background:var(--primary);
+  color:white;
+  padding:.65rem 1rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+}
+.cta:hover{background:var(--accent)}
+
+/* Sections */
+.about, .services, .contact{background:#fff;border-radius:var(--radius);padding:1.25rem;margin:0 0 1rem;border:1px solid #eaf6f2}
+.services h3, .about h3, .contact h3{margin-top:0}
+
+/* Service grid */
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+}
+.service{padding:.75rem;border-radius:8px;background:#fbfffe;border:1px solid #e6f6f1}
+.service h4{margin:.25rem 0}
+/* Contact grid */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1rem;
+}
+.contact-card p{margin:.45rem 0}
+.map iframe{
+  width:100%;
+  height:300px;
+  border:0;
+  border-radius:8px;
+}
+
+/* Footer */
+.site-footer{padding:1rem;text-align:center;color:var(--muted);font-size:.95rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .nav{display:none}
+}
+@media (max-width:600px){
+  .service-grid{grid-template-columns:1fr}
+  .hero h2{font-size:1.5rem}
+  .hero{padding:2.5rem 0}
+}
