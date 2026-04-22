@@ -32,10 +32,10 @@ body {
 
 /* Clinic Image */
 .top-bar img {
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 /* Address line */
