@@ -9,8 +9,8 @@
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 .logo {
-  width: 70px;        /* control size */
-  height: 70px;
+  width: 60px;        /* control size */
+  height: 60px;
   object-fit: cover;  /* prevents distortion */
 }
 
