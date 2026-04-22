@@ -75,7 +75,7 @@ body{
 /* Service grid */
 .service-grid{
   display:grid;
-  grid-template-columns:repeat(3,2fr);
+  grid-template-columns:repeat(3,1fr);
   gap:1rem;
 }
 .service{padding:.75rem;border-radius:8px;background:#fbfffe;border:1px solid #e6f6f1}
