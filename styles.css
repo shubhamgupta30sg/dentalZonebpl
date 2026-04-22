@@ -14,11 +14,41 @@ body {
 }
 
 /* Top Header */
+/* Top Header with image + title */
 .top-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   background: #ffffff;
-  padding: 10px 40px;
-  font-weight: 600;
+  padding: 15px 40px;
+}
+
+/* Dental Zone Title (bigger) */
+.top-bar .clinic-name {
+  font-size: 36px;
+  font-weight: 800;
   color: #0b2a3c;
+}
+
+/* Clinic Image */
+.top-bar img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Address line */
+.top-bar .address {
+  font-size: 14px;
+  color: #555;
+  margin-left: 10px;
+}
+
+/* Navbar doctor name (smaller than Dental Zone) */
+.navbar h1 {
+  font-size: 26px;
+  color: #1c6b63;
 }
 
 /* Navbar */
