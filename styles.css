@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;   /* vertical alignment */
   gap: 15px;             /* space between image and text */
-  padding: 15px 40px;
+  padding: 100px 140px;
   background: #ffffff;
   background-color: #f5f7f6
 }
