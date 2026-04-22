@@ -26,15 +26,15 @@ body {
 
 /* Image */
 .top-bar img {
-  width: 40px;
+  width: 30px;
   height: 60px;
   border-radius: 8px;
 }
 
 /* Dental Zone text */
 .clinic-name {
-  font-size: 28px;   /* bigger than Dr. Sagar Gupta */
-  font-weight: 600;
+  font-size: 38px;   /* bigger than Dr. Sagar Gupta */
+  font-weight: 800;
   color: #0b2a3c;
 }
 
