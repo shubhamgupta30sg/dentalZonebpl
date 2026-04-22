@@ -15,34 +15,34 @@ body {
 
 /* Top Header */
 /* Top Header with image + title */
+/* Container for image + title */
 .top-bar {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  background: #ffffff;
+  align-items: center;   /* vertical alignment */
+  gap: 15px;             /* space between image and text */
   padding: 15px 40px;
+  background: #ffffff;
 }
 
-/* Dental Zone Title (bigger) */
-.top-bar .clinic-name {
-  font-size: 36px;
+/* Image */
+.top-bar img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Dental Zone text */
+.clinic-name {
+  font-size: 38px;   /* bigger than Dr. Sagar Gupta */
   font-weight: 800;
   color: #0b2a3c;
 }
 
-/* Clinic Image */
-.top-bar img {
-  width: 10px;
-  height: 10px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-/* Address line */
-.top-bar .address {
+/* Address below (optional) */
+.address {
   font-size: 14px;
   color: #555;
-  margin-left: 10px;
 }
 
 /* Navbar doctor name (smaller than Dental Zone) */
