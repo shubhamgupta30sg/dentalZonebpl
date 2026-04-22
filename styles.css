@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, sans-serif;
 }
+.brand{
+  display: flex;
+  align-items: center;   /* vertical alignment */
+  gap: 15px;             /* space between image and text */
+  padding: 15px 40px;
+  background: #ffffff;
+}
+
 
 /* Body */
 body {
